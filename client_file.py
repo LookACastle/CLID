@@ -37,8 +37,8 @@ class client(discord.Client):
 		await super().send_message(channel_object, content=message)
 
 	async def on_typing(self, channel, user, when):
-		if channel.name == "lektier":
-			await self.send_message("lektier", "testy testing from testland")
+		if channel.name == "testserv":
+			await self.send_message("testserv", "testy testing from testland")
 		
 	async def on_ready(self):
 		def get_servers():
